@@ -30,12 +30,12 @@ bot.onText(/\/start/, async (msg) => {
   const chatId = msg.chat.id;
   const welcome =
     'Halo! 🤖\n' +
-    'Saya bot AI Panorama.\n\n' +
+    'Saya bot AI berbasis Google Gemini.\n\n' +
     'Kirim pertanyaan atau topik apa pun, saya akan membalas dengan jawaban AI.\n' +
     `Model saat ini: ${GEMINI_MODEL}\n\n` +
     'Perintah:\n' +
-    '/model_flash — pakai 1.5-flash +
-    '/model_pro — pakai 1.5-pro-;
+    '/model_flash — pakai gemini-1.5-flash-latest\n' +
+    '/model_pro — pakai gemini-1.5-pro-latest\n';
   await bot.sendMessage(chatId, welcome);
 });
 
